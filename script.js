@@ -10,12 +10,26 @@
     
 // }
 
-var gender = prompt("Entr your gender male & female")
-if(gender === "male"){
-    alert("welcome to sir")
-}
-else if(gender === "female"){
- alert("welcome to madam")
-}else{
-    alert("please enter your correct gender")
-}
+// var gender = prompt("Entr your gender male & female")
+// if(gender === "male"){
+//     alert("welcome to sir")
+// }
+// else if(gender === "female"){
+//  alert("welcome to madam")
+// }else{
+//     alert("please enter your correct gender")
+// }
+
+
+var math = parseInt(prompt("enter your math Number"))
+var english = parseInt(prompt("enter your english Number"))
+var urdu =parseInt(prompt("enter your urdu Number"))
+
+var total = math + english +urdu
+var percentage = total/300*100;
+var round = Math.round(percentage)
+document.getElementById("result").innerHTML = "your total marks"+total
+document.getElementById("percentage").innerHTML = "your percentage"+round+"%"
+console.log(total);
+console.log( percentage);
+
